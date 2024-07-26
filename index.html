@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Full Cycle Dev: William Acquah's Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/91fc2670b4.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo.PNG" alt="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Full Stack Developer</p>
+                <h1>Hi, I am <span>William</span><br> from Ghana</h1>
+            </div>
+        </div>
+        
+    </div>
+    <!--About-->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/ProfilePhoto.png" alt="ProfilePhoto">
+                </div>
+                <div class="about-col-2">
+                    <h1>About Me</h1>
+                    <p>I am a highly motivated Software Engineer with a passion for creating innovative web applications. Proficient in C#, JavaScript, HTML, CSS, and eager to learn new technologies. Excited about contributing to dynamic teams, leveraging problem-solving skills to tackle challenges, and building user-friendly solutions.</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab(event,'skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab(event, 'experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab(event, 'education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>C#</span><br></li>
+                            <li><span>HTML</span><br></li>
+                            <li><span>CSS</span><br></li>
+                            <li><span>JavaScript</span><br></li>
+                            <li><span>EJS</span><br></li>
+                            <li><span>Node</span><br></li>
+                            <li><span>Git</span><br></li>
+                            <li><span>GitHub</span><br></li>
+                            <li><span>SQL</span><br></li>
+                            <li><span>Java</span><br></li>
+                            <li><span>C & C++</span><br></li>
+                            <li><span>Python</span><br></li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>October 2022- August 2023</span><br>Data Analyst Intern
+                                <p>
+                                    <ul>
+                                        <li>Performed exploratory data analysis (EDA) using Python libraries like Pandas, NumPy, and Matplotlib 
+                                            to gain a deep understanding of the data, identify patterns, outliers, and potential data quality issues.</li>
+                                        <li>Created insightful visualizations, including plots, charts, and graphs, using libraries like Matplotlib.</li>
+                                        <li>Solved complex data-related challenges by designing and implementing innovative analytical solutions.</li>
+                                    </ul>
+                                </p>
+                            </li>
+                            <li><span>January 2022- Present</span><br>Independent Work
+                                <p>
+                                    <ul>
+                                        <li>Designed and developed a Blog web application using Node.js, Express.js, and EJS. The project aimed to provide users with the ability to create, view, update, and delete blog posts. </li>
+                                        <li>Developed a website that is able tell whether it will rain tomorrow using the Express/Node.js platform, along with the Axios HTTP client, to integrate OpenWeatherMap API. The project focused on interacting with OpenWeatherMap API, retrieving data, and presenting it in a user-friendly manner to enhance the overall user experience.</li>
+                                        <li>Developed a web application using Express.js and Node.js to create a platform for storing and managing book notes. Leveraged the Open Library Covers API to fetch book covers dynamically. Implemented a PostgreSQL database for data persistence, allowing users to create, read, update, and delete book entries. Ensured a user-friendly interface for presenting book data and enabled sorting by rating and recency.</li>
+                                    </ul>
+                                </p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>Constructor University</span><br>Bachelor's degree in Electrical and Computer Engineering
+                                <p>
+                                    <ul>
+                                        <li>September 2020 - August 2023</li>
+                                    </ul>
+                                </p>
+                            </li>   
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Services-->
+    <div id="services">
+        <div class="container">
+            <h1>My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Design</h2>
+                    <p></p>
+                    <a href="#">learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-database"></i>
+                    <h2>Data Science</h2>
+                    <p></p>
+                    <a href="#">learn more</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-app-store"></i>
+                    <h2>App Design</h2>
+                    <p></p>
+                    <a href="#">learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--portfolio-->
+    <div id="portfolio">
+        <div class="container">
+            <h1>My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/WebBlogAppImage.PNG">
+                    <div class="layer">
+                        <h3>Web Blog Application</h3>
+                        <p>Share your stories, connect with the world!</p>
+                        <a href="https://williamacquahdev-com.preview-domain.com/"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/RainCheck App.PNG">
+                    <div class="layer">
+                        <h3>RainCheck Tomorrow</h3>
+                        <p>Determine if it will rain tomorrow</p>
+                        <a href="https://github.com/williamacquah/BackEnd/tree/main/Capstone%20Project%204-Use%20a%20Public%20API%20(RainCheck%20Tomorrow)"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/SimonGameImage.PNG">
+                    <div class="layer">
+                        <h3>Simon Game</h3>
+                        <p>Master the sequence, conquer the lights!</p>
+                        <a href="https://github.com/williamacquah/FrontEnd/tree/main/Simon%2BGame%2BChallenge/Simon%20Game%20Challenge%20Starting%20Files"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See more</a>
+        </div>
+    </div>
+    <!--contact-->
+    <div id="contact">
+        <div class="container">
+            <h1>Contact Me</h1>
+            <div class="row">
+                <div class="contact-left">
+                    <p><i class="fa-solid fa-paper-plane"></i>willit1479@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i>+4915259354357</p>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/williamacquah/"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/williamacquah"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://www.instagram.com/williamacquah_/"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://twitter.com/williamacquah_"><i class="fa-brands fa-x-twitter"></i></a>
+                    </div>
+                    <a href="images/WilliamAcquahDeveloperCV.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright"></div>
+    </div>
+<script src="index.js"></script>    
+</body>
+</html>
